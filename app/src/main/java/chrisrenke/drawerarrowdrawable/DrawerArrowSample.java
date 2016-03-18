@@ -43,7 +43,7 @@ public class DrawerArrowSample extends Activity {
     drawerArrowDrawable.setStrokeColor(resources.getColor(R.color.light_gray));
     imageView.setImageDrawable(drawerArrowDrawable);
 
-    drawer.setDrawerListener(new DrawerLayout.SimpleDrawerListener() {
+    drawer.addDrawerListener(new DrawerLayout.SimpleDrawerListener() {
       @Override public void onDrawerSlide(View drawerView, float slideOffset) {
         offset = slideOffset;
 
